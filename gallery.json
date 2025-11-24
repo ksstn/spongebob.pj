@@ -1,0 +1,173 @@
+[
+    {
+        "title": "SpongeBob",
+        "description": "The cheerful main character.",
+        "img": "assets/Spongebob.png",
+        "gallery": [
+            "assets/spongebob1.png",
+            "assets/spongebob2.png",
+            "assets/spongebob3.png",
+            "assets/spongebob4.png",
+            "assets/spongebob5.png",
+            "assets/spongebob6.png",
+            "assets/spongebob7.png",
+            "assets/spongebob8.png",
+            "assets/spongebob9.png",
+            "assets/spongebob10.png"
+        ]
+    },
+    {
+        "title": "Patrick Star",
+        "description": "SpongeBob's lovable best friend.",
+        "img": "assets/Patrick.png",
+        "gallery": [
+            "assets/Patrick1.jpg",
+            "assets/Patrick2.jpg",
+            "assets/Patrick3.jpg",
+            "assets/Patrick4.jpg",
+            "assets/Patrick5.jpg",
+            "assets/Patrick6.jpg",
+            "assets/Patrick7.jpg",
+            "assets/Patrick8.jpg",
+            "assets/Patrick9.jpg",
+            "assets/Patrick10.jpg"
+        ]
+    },
+    {
+        "title": "Squidward",
+        "description": "Grumpy neighbor of SpongeBob.",
+        "img": "assets/Squidward.png",
+        "gallery": [
+            "assets/Squidward1.jpg",
+            "assets/Squidward2.jpg",
+            "assets/Squidward3.jpg",
+            "assets/Squidward4.jpg",
+            "assets/Squidward5.jpg",
+            "assets/Squidward6.jpg",
+            "assets/Squidward7.jpg",
+            "assets/Squidward8.jpg",
+            "assets/Squidward9.jpg",
+            "assets/Squidward10.jpg"
+        ]
+    },
+    {
+        "title": "Mr. Krabs",
+        "description": "The money-loving owner of the Krusty Krab.",
+        "img": "assets/Eugene_Krabs.png",
+        "gallery": [
+            "assets/MrKrabs1.jpg",
+            "assets/MrKrabs2.jpg",
+            "assets/MrKrabs3.jpg",
+            "assets/MrKrabs4.jpg",
+            "assets/MrKrabs5.jpg",
+            "assets/MrKrabs6.jpg",
+            "assets/MrKrabs7.jpg",
+            "assets/MrKrabs8.jpg",
+            "assets/MrKrabs9.jpg",
+            "assets/MrKrabs10.jpg"
+        ]
+    },
+    {
+        "title": "Sandy Cheeks",
+        "description": "A smart and athletic squirrel from Texas.",
+        "img": "assets/Sandy.png",
+        "gallery": [
+            "assets/Sandy1.jpg",
+            "assets/Sandy2.jpg",
+            "assets/Sandy3.jpg",
+            "assets/Sandy4.jpg",
+            "assets/Sandy5.jpg",
+            "assets/Sandy6.jpg",
+            "assets/Sandy7.jpg",
+            "assets/Sandy8.jpg",
+            "assets/Sandy9.jpg",
+            "assets/Sandy10.jpg"
+        ]
+    },
+    {
+        "title": "Plankton",
+        "description": "The tiny villain always plotting to steal the Krabby Patty secret formula.",
+        "img": "assets/Plankton.png",
+        "gallery": [
+            "assets/Plankton1.jpg",
+            "assets/Plankton2.jpg",
+            "assets/Plankton3.jpg",
+            "assets/Plankton4.jpg",
+            "assets/Plankton5.jpg",
+            "assets/Plankton6.jpg",
+            "assets/Plankton7.jpg",
+            "assets/Plankton8.jpg",
+            "assets/Plankton9.jpg",
+            "assets/Plankton10.jpg"
+        ]
+    },
+    {
+        "title": "Karen",
+        "description": "Plankton’s computer wife and tech genius.",
+        "img": "assets/Karen.png",
+        "gallery": [
+            "assets/Karen1.jpg",
+            "assets/Karen2.jpg",
+            "assets/Karen3.jpg",
+            "assets/Karen4.jpg",
+            "assets/Karen5.jpg",
+            "assets/Karen6.jpg",
+            "assets/Karen7.jpg",
+            "assets/Karen8.jpg",
+            "assets/Karen9.jpg",
+            "assets/Karen10.jpg"
+        ]
+    },
+    {
+        "title": "Pearl Krabs",
+        "description": "Mr. Krabs’ teenage whale daughter who loves shopping.",
+        "img": "assets/Pearl.png",
+        "gallery": [
+            "assets/Pearl1.jpg",
+            "assets/Pearl2.jpg",
+            "assets/Pearl3.jpg",
+            "assets/Pearl4.jpg",
+            "assets/Pearl5.jpg",
+            "assets/Pearl6.jpg",
+            "assets/Pearl7.jpg",
+            "assets/Pearl8.jpg",
+            "assets/Pearl9.jpg",
+            "assets/Pearl10.jpg"
+        ]
+    },
+    {
+        "title": "Gary",
+        "description": "SpongeBob’s loyal pet snail who meows.",
+        "img": "assets/Gary.png",
+        "gallery": [
+            "assets/Gary1.jpg",
+            "assets/Gary2.jpg",
+            "assets/Gary3.jpg",
+            "assets/Gary4.jpg",
+            "assets/Gary5.jpg",
+            "assets/Gary6.jpg",
+            "assets/Gary7.jpg",
+            "assets/Gary8.jpg",
+            "assets/Gary9.jpg",
+            "assets/Gary10.jpg"
+        ]
+    },
+    {
+        "title": "Mrs. Puff",
+        "description": "SpongeBob’s boating school teacher.",
+        "img": "assets/Mrs_Puff.png",
+        "gallery": [
+            "assets/MrsPuff1.jpg",
+            "assets/MrsPuff2.jpg",
+            "assets/MrsPuff3.jpg",
+            "assets/MrsPuff4.jpg",
+            "assets/MrsPuff5.jpg",
+            "assets/MrsPuff6.jpg",
+            "assets/MrsPuff7.jpg",
+            "assets/MrsPuff8.jpg",
+            "assets/MrsPuff9.jpg",
+            "assets/MrsPuff10.jpg"
+        ]
+    }
+]
+
