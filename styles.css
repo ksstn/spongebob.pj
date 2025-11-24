@@ -14,13 +14,13 @@ body {
 .welcome-container {
     background-color: rgba(255, 247, 0, 0.172);
 }
-.welcome-container h1 {
+.welcome-container h1, .about-container h1{
     color: #000000;
     font-family: 'Slackey';
     font-size: 60px;
     line-height: 65px;
 }
-.welcome-container p, .facts-p {
+.welcome-container p, .facts-p, .about-container p {
     color: #000000;
     font-size: 18px;
     font-family: Poppins, sans-serif;
@@ -58,7 +58,7 @@ font-size: 33px;
     font-family: 'Slackey';
     font-size: 19px;
 }
-.char-section{
+.char-section, .loc-section, .about-section{
     background-color: rgba(255, 247, 0, 0.172);
 }
 .character-card {
@@ -89,16 +89,17 @@ font-size: 33px;
     font-size: 15px;
     line-height:28px;
 }
-.char-img {
+.char-img, .loc-img {
     width:60%;
     height:60%;
 }
 @media (max-width: 900px) {
-    .welcome-container h1 {
+    .welcome-container h1, .about-container h1{
         font-size: 27px;
         line-height: 35px;
+        text-align: center;
     }
-    .welcome-container p, .facts-p {
+    .welcome-container p, .facts-p .about-container p{
         font-size: 14px;
     }
     .title {
@@ -112,7 +113,7 @@ font-size: 33px;
         width: 70%;
         padding-bottom: 70%;
     }
-    .char-img{
+    .char-img, .loc-img{
         width: 50%;
         height: 50%;
     }
