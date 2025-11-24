@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpongeBob SquarePants</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg position-sticky top-0 shadow-sm"
+            style="background-color: #FFF700; z-index:1;">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-4" href="#">
+                    <img src="assets/SpongeBob-SquarePants-logo.png" width="84" height="49" alt="SpongeBob Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5 me-4" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-1"><a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item me-1"><a class="nav-link" href="character.html">Characters</a></li>
+                        <li class="nav-item me-1"><a class="nav-link active" href="locations.html">Locations</a></li>
+                        <li class="nav-item me-1"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div>
+            <img src="assets/banner.jpg" class="img-fluid w-100 banner-img" alt="SpongeBob Banner">
+        </div>
+
+        <!-- card for locations -->
+        <div class="container mt-5">
+            <div class="p-5 my-5 shadow-sm rounded-3 loc-section" style="width: 108%; position: relative; left: -4%;">
+                <div class="row">
+                    <div class="col-12 text-start py-3 px-5 rounded-4 shadow-sm title">
+                        Locations
+                    </div>
+                    <div id="location-card-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var locationCardContainer = document.getElementById("location-card-container");
+
+            // location array
+            var locations = [
+                {
+                    title: "Bikini Bottom City",
+                    description: "The bustling underwater city full of quirky characters and iconic places.",
+                    img: "assets/Bikini_Bottom.jpg",
+                    gallery: [
+                        "assets/bb1.jpg",
+                        "assets/bb2.jpg",
+                        "assets/bb3.jpg",
+                        "assets/bb4.jpg",
+                        "assets/bb5.jpg"
+                    ]
+                },
+                {
+                    title: "Krusty Krab",
+                    description: "Home of the legendary Krabby Patty. Mr. Krabs and SpongeBob work here.",
+                    img: "assets/The_Krusty_Krab.jpg",
+                    gallery: [
+                        "assets/kk1.jpg",
+                        "assets/kk2.jpg",
+                        "assets/kk3.jpg",
+                        "assets/kk4.jpg",
+                        "assets/kk5.jpg"
+                    ]
+                },
+                {
+                    title: "Goo Lagoon",
+                    description: "A sunny beach where everyone loves to hang out and have fun.",
+                    img: "assets/Goo_Lagoon.jpg",
+                    gallery: [
+                        "assets/gl1.jpg",
+                        "assets/gl2.jpg",
+                        "assets/gl3.jpg",
+                        "assets/gl4.jpg",
+                        "assets/gl5.jpg"
+                    ]
+                },
+                {
+                    title: "Rock Bottom",
+                    description: "A mysterious, deep-sea city with unusual creatures and strange architecture.",
+                    img: "assets/Rock_Bottom.jpg",
+                    gallery: [
+                        "assets/rb1.jpg",
+                        "assets/rb2.jpg",
+                        "assets/rb3.jpg",
+                        "assets/rb4.jpg",
+                        "assets/rb5.jpg"
+                    ]
+                }
+            ];
+            for (var i = 0; i < locations.length; i++) {
+                var item = locations[i];
+
+                //card
+                var card = document.createElement("div");
+                card.className = "card mb-3 mt-5 w-100 shadow-sm";
+                card.style.backgroundColor = "#9BFFF7";
+
+                // each card has its own gallery container
+                var galleryId = "location-gallery-" + i;
+                var buttonId = "location-btn-" + i;
+
+                card.innerHTML =
+                    '<div class="row g-0 align-items-center py-4">' +
+                    '<div class="col-md-4 d-flex justify-content-center align-items-center">' +
+                    '<img src="' + item.img + '" class="img-fluid rounded-3 object-fit-cover loc-img" alt="img' + item.title + '">' +
+                    '</div>' +
+                    '<div class="col-md-8">' +
+                    '<div class="card-body">' +
+                    '<h5 class="card-caption">' + item.title + '</h5>' +
+                    '<p class="desc">' + item.description + '</p>' +
+                    '<button id="' + buttonId + '" class="btn btn-sm rounded-5 px-3 btn-warning text-black shadow-sm">Show Gallery</button>' +
+                    '<div id="' + galleryId + '" class="d-flex flex-wrap gap-3 mt-3" style="display:none;"></div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+
+                locationCardContainer.appendChild(card);
+
+                // show/hide gallery
+                (function (index, btnId, galId) {
+                    var btn = document.getElementById(btnId);
+                    var galContainer = document.getElementById(galId);
+                    var hidden = true;
+
+                    btn.addEventListener("click", function () {
+                        if (hidden) {
+                            galContainer.innerHTML = "";
+                            for (var j = 0; j < locations[index].gallery.length; j++) {
+                                var img = document.createElement("img");
+                                img.src = locations[index].gallery[j];
+                                img.className = "img-fluid rounded p-2";
+                                img.style.width = "150px";
+                                img.style.height = "150px";
+                                img.style.objectFit = "cover";
+                                galContainer.appendChild(img);
+                            }
+                            galContainer.style.display = "flex";
+                            btn.innerHTML = "Hide Gallery";
+                            hidden = false;
+                        } else {
+                            galContainer.style.display = "none";
+                            galContainer.innerHTML = "";
+                            btn.innerHTML = "Show Gallery";
+                            hidden = true;
+                        }
+                    });
+                })(i, buttonId, galleryId);
+            }
+        </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
