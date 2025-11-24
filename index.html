@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpongeBob SquarePants</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg position-sticky top-0 shadow-sm"
+            style="background-color: #FFF700; z-index:1;">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-4" href="#">
+                    <img src="assets/SpongeBob-SquarePants-logo.png" width="84" height="49" alt="SpongeBob Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5 me-4" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-1"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item me-1"><a class="nav-link" href="#welcome">About</a></li>
+                        <li class="nav-item me-1"><a class="nav-link" href="character.html">Characters</a></li>
+                        <li class="nav-item me-1"><a class="nav-link" href="#">Locations</a></li>
+                        <li class="nav-item me-1"><a class="nav-link" href="#">Timeline</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div>
+            <img src="assets/banner.jpg" class="img-fluid w-100 banner-img" alt="SpongeBob Banner">
+        </div>
+
+        <!-- welcome section -->
+        <div class="container p-5" id="welcome">
+            <div class="col-12-lg p-5 m-3 rounded-3 shadow-sm  welcome-container ">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg">
+                        <p class="mb-1">Welcome To</p>
+                        <h1 class="fw-bold">
+                            SpongeBob<br>SquarePants
+                        </h1>
+                        <p class="mt-3">
+                           Dive into the colorful world of Bikini Bottom! Explore our SpongeBob SquarePants gallery, 
+                           where you’ll discover iconic characters, unforgettable scenes, and the fun-filled adventures of SpongeBob and his friends.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 mt-4">
+                        <img src="assets/welcome_pic.png" class="img-fluid" alt="SpongeBob Hero Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- location-section -->
+        <div class="location-section">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-12 text-start py-3 px-5 rounded-4 shadow-sm title">
+                        Locations
+                    </div>
+                </div>
+            </div>
+            <div id="locations" class="row g-1 justify-content-center"></div>
+        </div>
+        <!-- character-section -->
+        <div class="container mt-5">
+            <div class="p-5 my-5 shadow-sm rounded-3 char-section" style="width: 108%; position: relative; left: -4%;">
+                <div class="row">
+                    <div class="col-12 text-start py-3 px-5 rounded-4 shadow-sm title">
+                        Characters
+                    </div>
+                </div>
+                <div id="characters" class="row g-1 justify-content-center"></div>
+            </div>
+        </div>
+        <!-- facts-section -->
+        <div class="facts-section">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-12 text-start py-3 px-5 rounded-4 shadow-sm title">
+                        Fun facts about SpongeBob
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col mt-5 facts-p">
+                                Get ready to dive into some fin-tastic SpongeBob fun facts! From the secret inspirations 
+                                behind SpongeBob’s goofy laugh to the surprising origins of his pineapple home, Bikini Bottom 
+                                is full of quirky details you never knew you needed. Discover the funny, weird, and wonderful 
+                                trivia that makes SpongeBob’s world so unforgettable!
+                            </div>
+                            <div class="row">
+                                <div class="col mt-4 desc" id="facts">
+                                    <ul id="factsList"></ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-2">
+                                    <div class="h3">
+                                        <button onclick="hideAndShow()" id="show-hide-button"
+                                            class="btn btn-sm rounded-5 px-3 ms-3 btn-warning text-black shadow-sm">Hide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <div class="d-flex justify-content-center align-items-center gap-3 mb-2">
+            <img src="assets/SpongeBob-SquarePants-logo.png" alt="Spongebob logo" width="70" height="50">
+            <span style="font-size:24px;">│</span>
+            <img src="assets/logo.png" alt="KSSTN Logo" width="60" height="60">
+        </div>
+        <p class="mb-2" style="font-size: 13px;">SpongeBob SquarePants Gallery | Kristine Maglinao BSIT 3-2 | Prof: Christopher De Claro</p>
+        <p class="mb-2" style="font-size: 13px;">&copy; 2025 <a href="https://github.com/ksstn" class="text-white text-decoration-none">Spongebob.ksstn</a></p>
+        <hr class="bg-secondary">
+        <div class="d-flex justify-content-center gap-2 mt-2">
+            <a class="btn btn-outline-secondary btn-sm rounded-circle" href="https://github.com"><i class="bi bi-github"></i></a>
+            <a class="btn btn-outline-secondary btn-sm rounded-circle" href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+            <a class="btn btn-outline-secondary btn-sm rounded-circle" href="https://twitter.com"><i class="bi bi-twitter-x"></i></a>
+            <a class="btn btn-outline-secondary btn-sm rounded-circle" href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+        </div>
+    </div>
+</footer>
+
+            <script>
+                // location
+                var locationNames = ["Bikini Bottom", "Goo Lagoon", "Krusty Krab", "Rock Bottom"];
+                var locationImgs = ["assets/Bikini_Bottom.jpg", "assets/Goo_Lagoon.jpg", "assets/The_Krusty_Krab.jpg", "assets/Rock_Bottom.jpg"];
+                var locationContainer = document.getElementById("locations");
+
+                for (var i = 0; i < locationNames.length; i++) {
+                    var card = document.createElement("div");
+                    card.className = "col-6 col-md-4 col-lg-3 text-center mt-5";
+                    card.innerHTML = '<div class="location-card rounded-4">' +
+                        '<img src="' + locationImgs[i] + '" alt="' + locationNames[i] + '" class="rounded-4">' +
+                        '</div>' + '<p class="card-caption mt-4">' + locationNames[i] + '</p>';
+                    locationContainer.appendChild(card);
+                }
+                // characters
+                var characterNames = ["SpongeBob", "Patrick", "Squidward", "Mr. Krabs", "Sandy", "Plankton", "Gary", "Pearl", "Karen", "Mrs. Puff"];
+                var characterImgs = ["assets/Spongebob.png", "assets/Patrick.png", "assets/squidward.png", "assets/Eugene_Krabs.png", "assets/Sandy.png",
+                    "assets/Plankton.png", "assets/gary.png", "assets/Pearl.png", "assets/Karen.png", "assets/Mrs_Puff.png"];
+                var charactersContainer = document.getElementById("characters");
+
+                for (var i = 0; i < characterNames.length; i++) {
+                    var card = document.createElement("div");
+                    card.className = "col-6 col-md-4 col-lg-3 text-center mt-5";
+                    card.innerHTML = '<div class="character-card rounded-4">' +
+                        '<img src="' + characterImgs[i] + '" alt="' + characterNames[i] + '" class="rounded-4">' +
+                        '</div>' + '<p class="card-caption mt-3">' + characterNames[i] + '</p>';
+                    charactersContainer.appendChild(card);
+                }
+                // facts spongebob
+                var facts = [
+                    "SpongeBob was originally called SpongeBoy, but that name was copyrighted by a mop.", " Spongebob is ambidextrous, meaning he is able to write with both hands",
+                    "SpongeBob lives in a pineapple under the sea in Bikini Bottom.", "Spongebob was born from a perfect marriage of interests.",
+                    "SpongeBob can never pass his driving test no matter how many times he tries!.", "SpongeBob's favorite color is beige. His favorite ice cream flavor is vanilla.",
+                    "SpongeBob has 27 holes.", "SpongeBob's birthday is July 14th, 1986.", "Even though SpongeBob lives in the sea, he can't swim!",
+                    "Spongebob is afraid of the dark.", "Spongebob's laugh is based on the sound a dolphin makes.", "The fictional town where SpongeBob lives is called Bikini Bottom. It is shown in the series to be below a real place, Bikini Atoll, which is a former nuclear test site which is still uninhabitable today."
+
+                ];
+                var factsList = document.getElementById("factsList");
+                var isHidden = false;
+
+                function renderFacts() {
+                    for (var i = 0; i < facts.length; i++) {
+                        var li = document.createElement("li");
+                        li.textContent = facts[i];
+                        factsList.appendChild(li);
+                    }
+                }
+                renderFacts();
+
+                function hideAndShow() {
+                    var content = document.getElementById("facts");
+                    var btn = document.getElementById("show-hide-button");
+
+                    if (isHidden) {
+                        content.style.display = "block";
+                        btn.innerHTML = "Hide";
+                        isHidden = false;
+                    } else {
+                        content.style.display = "none";
+                        btn.innerHTML = "Show";
+                        isHidden = true;
+                    }
+                }
+            </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
